@@ -15,6 +15,7 @@ platforms:
     groups:
       - foo
       - bar
+    instance_profile_name: instance-profile
   - name: instance-2
     image: ami-a5b196c0
     instance_type: t2.micro
@@ -22,6 +23,7 @@ platforms:
     groups:
       - foo
       - baz
+    instance_profile_name: instance-profile
 provisioner:
   name: ansible
   config_options:
